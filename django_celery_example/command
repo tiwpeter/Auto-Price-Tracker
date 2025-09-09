@@ -1,0 +1,25 @@
+celery -A project worker --loglevel=info X
+celery -A project worker --loglevel=info --pool=solo
+celery -A project beat --loglevel=info 
+python manage.py runserver
+python manage.py migrate
+
+ python manage.py shell 
+ fortest
+
+
+ หากคุณอยู่ในช่วงพัฒนา ยังไม่มีข้อมูลสำคัญ:
+
+🔄 วิธีล้างและเริ่มใหม่ง่ายๆ:
+bash
+คัดลอก
+แก้ไข
+# ลบไฟล์ฐานข้อมูล (ถ้าใช้ SQLite)
+rm db.sqlite3
+
+# ลบ migration
+rm -r example/migrations/
+
+# สร้างใหม่
+python manage.py makemigrations example
+python manage.py migrate

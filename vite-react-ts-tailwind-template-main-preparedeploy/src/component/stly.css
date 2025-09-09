@@ -1,0 +1,92 @@
+
+
+.content-container{
+    -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 504px;
+  margin: 0 auto;
+  position: relative;
+  width: 1440px;
+}
+
+.home-main-title{
+    -webkit-line-clamp: 3;
+  -moz-box-orient: vertical;
+  color: rgb(255, 255, 255);
+  display: -webkit-box;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 52px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 950px;
+}
+
+
+.dwass{
+    height: 624px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+
+.home-dot-element{
+    height: 140px;
+  width: 786px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.pc-home-search {
+  height: 140px;
+  margin-top: 32px;
+  width: 786px;
+}
+
+.awfx {
+  background-color: aliceblue;
+  border-radius: 30px;
+  height: 56px;
+  align-items: center;
+}
+
+
+.pnc{
+  position:absolute;
+  top:189px;
+}
+
+
+.product-cards-container{
+  display: inline-flex;
+  gap: 16px;
+}
+
+.head-text {
+  margin-top: 1rem;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -1.2px;
+  color: rgb(255, 255, 255);
+}
+
+
+/* สำหรับมือถือ (หน้าจอ <= 640px) */
+@media (max-width: 640px) {
+  .pnc {
+    padding: 1rem;
+    max-width: 616px;
+  }
+  .head-text {
+    font-size: 3.5rem;
+  }
+}
